@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo h2{
+  font-size:larger;
+  font-family:'Yellowtail', cursive;
+}
+
+.showcase{
+  height: 100vh;
+  background:url('./assets/Grimpsel.jpg') no-repeat center/cover;
+}
+
+.showcase .overlay {
+  height:15vh;
+  background-color: rgba(0,0,0,0.8);
+}
+
