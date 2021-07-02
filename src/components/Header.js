@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 const Header = () => {
     return (
       <>
-        <header className="flex justify-between p-5 absolute w-full text-white">
+        <header className="flex justify-between p-10 absolute w-full text-white">
           <div className="logo"> 
-            <h2 className="text-3xl lg:text-9xl">
-              <Link to="/">Carmine Tambascia</Link>
+            <h2>
+              <Link to="/" className="text-black text-3xl lg:text-7xl">Carmine Tambascia</Link>
             </h2>  
           </div>
 
@@ -20,9 +20,10 @@ const Header = () => {
                   <Link to="/projects">Projects</Link>
               </li>
               <li>
-                  <Link to="/hire">Hire</Link>
+                  <Link to="/hire" className="mr-5 bg-blue-400 p-1 px-4 rounded-full font-semibold transition-all
+            hover:bg-blue-500">Hire</Link>
               </li>
-            </ul>
+            </ul> 
           </nav>
         </header>
       </>  
