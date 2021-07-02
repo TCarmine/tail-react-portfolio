@@ -6,7 +6,7 @@ const Header = () => {
       <>
         <header className="flex justify-between p-5 absolute w-full text-white">
           <div className="logo"> 
-            <h2 className="text-3xl">
+            <h2 className="text-3xl lg:text-9xl">
               <Link to="/">Carmine Tambascia</Link>
             </h2>  
           </div>
