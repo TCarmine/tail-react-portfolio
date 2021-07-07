@@ -7,21 +7,22 @@ const Projects = () => {
 
   return (
     <>
-      <section className="py-36 px-5 bg-blue-800">
+      <section className="py-36 px-5 bg-blue-900 cover grid grid-cols-1 gap-5
+      sm:grid-cols-2 lg:grid-cols-2 lg:h-screen lg:pt-36">
         {items.map((item) => {
           const { id, title, subtitle, description, imgSrc } = item
           return (
             <div key={id}>
               <p>{title}</p>
-              <img src={`${imgSrc}`} alt={subtitle} width="400" height="341"/>
-              <small>{description}</small>
-              {console.log(`${projects.imgSrc}`)}
+              <img src={`${imgSrc}`} alt={subtitle} className="p-5 bg-green-500 rounded"/>
+              <small className="block text-center text-white
+              font-semibold text-lg">
+                {description}
+              </small>
             </div>
           )
         })}
       </section>
-      <img src="./assets/Grimpsel.jpg" alt="lucern"  width="300" height="341" />
-      <img src="https://randomuser.me/api/portraits/men/94.jpg"  width="300" height="341" />
     </>
     )
 }
