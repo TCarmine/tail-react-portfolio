@@ -13,7 +13,7 @@ export const projects = [
     subtitle: "React Financial Dashboard to track my Dividends",
     description:
       "An App to keep track of my investment portfolio considering sector of stocks and dividends paid",
-    imgSrc: require("../assets/Grimelsee1.jpg").default  //"https://randomuser.me/api/portraits/men/94.jpg",
+    imgSrc: require("../assets/Grimelsee1.jpg").default  
   },
   {
     id:3,
