@@ -7,8 +7,8 @@ const Projects = () => {
 
   return (
     <>
-      <section className="py-36 px-5 bg-blue-900 cover grid grid-cols-1 gap-5
-      sm:grid-cols-2 lg:grid-cols-2 lg:h-screen lg:pt-36">
+      <section className="cover py-36 px-5 bg-blue-400 cover grid grid-cols-1 gap-5
+      sm:grid-cols-2 lg:grid-cols-2 lg:min-h-screen lg:pt-36">
         {items.map((item) => {
           const { id, title, subtitle, description, imgSrc } = item
           return (
