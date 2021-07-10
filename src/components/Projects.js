@@ -7,15 +7,15 @@ const Projects = () => {
 
   return (
     <>
-      <section className="cover py-36 px-5 bg-blue-400 cover grid grid-cols-1 gap-5
+      <section className="cover py-36 px-5 bg-blue-400 bg-opacity-30 cover grid grid-cols-1 gap-5
       sm:grid-cols-2 lg:grid-cols-2 lg:min-h-screen lg:pt-36">
         {items.map((item) => {
           const { id, title, subtitle, description, imgSrc } = item
           return (
             <div key={id} class="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center ">
-                <p className="block text-center text-lg">{title}</p> 
-                <small className="block text-center text-white font-semibold text-lg opacity-0 hover:opacity-100">
+                <p className="block text-center text-2xl">{title}</p> 
+                <small className="block text-center text-white font-semibold text-lg opacity-10 hover:opacity-100">
                   {description}
                 </small>
               </div>  
