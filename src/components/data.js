@@ -4,7 +4,7 @@ export const projects = [
     title: "Parlito App website",
     subtitle: "Remake of website for Parlito App",
     description:
-      "Remake of the old Parlito website to better describe what Parlito app will be",
+      "Remake of the old Parlito's website",
     imgSrc: require("../assets/Lu.jpg").default,
   },
   {
@@ -12,12 +12,13 @@ export const projects = [
     title: "Financial Dashboard",
     subtitle: "React Financial Dashboard to track my Dividends",
     description:
-      "An App to keep track of my investment portfolio considering sector of stocks and dividends paid",
+      "Keep track of my investment portfolio considering Stocks' sector."
+       +"Will track dividends' pay",
     imgSrc: require("../assets/Grimelsee1.jpg").default  
   },
   {
     id:3,
-    title: "Lollipop websiteSimple",
+    title: "Lollipop Simple Website",
     subtitle: "Website with flexbox CSS one of first made",
     description:
       "One of my first website where I applied my knowledge in CSS3 and flexbox",
@@ -28,7 +29,7 @@ export const projects = [
     title: "Linkedin Timeline Visualization",
     subtitle: "Make your LinkedIn profile understandable as Timeline",
     description:
-      "Application that will let tranform any Linkedin profile in a nice timeline CV andt could be also exported",
+      "Tranform Your Linkedin profile in a nice timeline story!",
     imgSrc: require("../assets/Grimelsee3.jpg").default,
   },
 ];

@@ -14,10 +14,10 @@ const Projects = () => {
           return (
             <div key={id} class="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center ">
-                <p className="block text-center text-2xl">{title}</p> 
-                <small className="block text-center text-white font-semibold text-lg opacity-10 hover:opacity-100">
+                <p className="block text-center text-5xl">{title}</p> 
+                <p className="text-center text-white break-all font-semibold text-lg opacity-25 hover:opacity-100">
                   {description}
-                </small>
+                </p>
               </div>  
               <div >
               {/*<a className="absolute inset-0 z-10 bg-white text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
