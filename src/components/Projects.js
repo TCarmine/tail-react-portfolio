@@ -14,7 +14,7 @@ const Projects = () => {
           return (
             <div key={id}>
               <p className="block text-center text-lg">{title}</p>
-              <img src={`${imgSrc}`} alt={subtitle} className="p-5 bg-green-500 rounded"/>
+              <img src={`${imgSrc}`} alt={subtitle} className="p-5 bg-green-500 rounded opacity-70"/>
               <small className="block text-center text-white
               font-semibold text-lg">
                 {description}
