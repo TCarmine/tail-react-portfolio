@@ -17,6 +17,24 @@
 .showcase .overlay {
   padding-top: 2.5rem;
   height:15vh;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.7);
 }
 
+@media screen and (min-width: 600px) {
+  .resize {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resize {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .resize {
+    padding-left: 8rem/* 128px */;
+    padding-right: 8rem/* 128px */;
+  }
+}

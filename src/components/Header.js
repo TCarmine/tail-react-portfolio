@@ -13,15 +13,17 @@ const Header = () => {
 
           <nav>
             <ul className="flex">
-              <li className="mr-5">
+              <li className="mr-5 bg-blue-400 p-1 px-4 rounded-full font-semibold transition-all
+               hover:bg-blue-500">
                 <Link to="/">Home</Link>
               </li>
-              <li className="mr-5">
+              <li className="mr-5 bg-blue-400 p-1 px-4 rounded-full font-semibold transition-all
+               hover:bg-blue-500">
                   <Link to="/projects">Projects</Link>
               </li>
-              <li>
-                  <Link to="/hire" className="mr-5 bg-blue-400 p-1 px-4 rounded-full font-semibold transition-all
-            hover:bg-blue-500">Hire</Link>
+              <li className="mr-5 bg-blue-400 p-1 px-4 rounded-full font-semibold transition-all
+               hover:bg-blue-500">
+                  <Link to="/hire" >Hire</Link>
               </li>
             </ul> 
           </nav>
