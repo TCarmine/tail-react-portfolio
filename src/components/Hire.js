@@ -7,9 +7,9 @@ const Hire = () => {
          justify-center lg:w-auto">
           <div className="flex flex-col w-9/12 lg:w-auto lg:flex-row">
             <div className="bg-blue-400 py-10 px-20 rounded
-            lg:px-10 pt-32">
+            lg:px-10 pt-32 ">
               <h2 className="text-white text-center text-5xl 
-              font-semibold mb-5">
+              font-semibold mb-5 lg:text-8xl">
                 Hire me!
               </h2>
               <p className="text-white text-center text-md 
@@ -17,8 +17,11 @@ const Hire = () => {
               placeholder-blue-400">Replies within 24 hours</p>
             </div>
 
-            <form name="Feeback form" className="flex flex-col
-            bg-blue-200 px-10 py-5 rounded">
+            <form 
+              name="Feeback form" 
+              className="flex flex-col
+              bg-blue-200 px-10 py-5 rounded"
+              method="post">
               <input 
                 type="text" 
                 name="username" 

@@ -3,6 +3,7 @@ import {projects} from "./data.js"
 
 
 const Projects = () => {
+  // eslint-disable-next-line
   const [items, setItems] = useState(projects)
 
   return (
