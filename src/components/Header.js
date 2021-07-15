@@ -1,7 +1,15 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, {useState} from "react"
+import {Link} from "react-router-dom"
+import Hamburger from "./Hamburger"
 
 const Header = () => {
+
+    const [hamburgerOpen, setHamburgerOpen] = useState(false)   
+
+    const toggleHamburger = () =>{
+      setHamburgerOpen=(!hamburgerOpen)
+    }
+
     return (
       <>
         <header className="flex flex-wrap justify-between md:space-x-4 p-10 w-full text-white relative">
@@ -29,7 +37,10 @@ const Header = () => {
                hover:bg-blue-500 mr-5 p-1 px-4">
                   <Link to="/hire" >Hire</Link>
               </li>
-            </ul> 
+            </ul>
+            <div className="hamburger" onClick={setHamburgerOpen} style={ hamburgerOpen ? { display:'inline'} : {display : 'none'} }  >
+              <Hamburger />
+            </div> 
           </nav>
         </header>
       </>  
