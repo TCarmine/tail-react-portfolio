@@ -7,7 +7,7 @@ const Header = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false)   
 
     const toggleHamburger = () =>{
-      setHamburgerOpen=(!hamburgerOpen)
+      setHamburgerOpen(!hamburgerOpen)
     }
 
     return (
