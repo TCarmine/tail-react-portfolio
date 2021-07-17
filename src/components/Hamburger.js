@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Hamburger = () => {
+const Hamburger = ({isOpen}) => {
+  console.log(isOpen)
   return (
     <>
       <div className="hamburger">
@@ -8,6 +9,17 @@ const Hamburger = () => {
         <div className="burger burger2" />
         <div className="burger burger3" />
       </div>
+      <style jsx>{`
+          .burger1{
+            transform: ${isOpen ? 'rotate(45deg)':'rotate(0)'}
+          }
+          .burger2{
+            opacity: ${isOpen? 0 : 1}
+          }
+          .burger3{
+            transform: ${isOpen ? 'rotate(-45deg)':'rotate(0)'}
+          }
+        `}</style>
     </>  
   )
 }

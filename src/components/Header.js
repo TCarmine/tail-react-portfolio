@@ -37,7 +37,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className="hamburger" onClick={toggleHamburger}>
-              <Hamburger />
+              <Hamburger isOpen={hamburgerOpen}/>
             </div>  
         </header>
       </>  
