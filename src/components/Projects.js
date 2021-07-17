@@ -13,7 +13,7 @@ const Projects = () => {
         {items.map((item) => {
           const { id, title, subtitle, description, imgSrc } = item
           return (
-            <div key={id} class="relative ">
+            <div key={id} className="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center ">
                 <p className="block text-center text-5xl">{title}</p> 
                 <p className="text-center text-white break-all font-semibold text-lg opacity-25 
