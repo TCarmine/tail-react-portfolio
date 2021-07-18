@@ -24,15 +24,6 @@
   display: none;
 }
 
-.hamburger {
-  width : 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column nowrap;
-  z-index: 10;
-}
-
 .burger{
   width: 2rem;
   height: 0.25rem;
@@ -42,13 +33,21 @@
   transition: all 0.3s linear;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-links:not(.open) {
+    display: none;
+  }
+}
+
 @media (max-width: 767px){
 
-  .hamburger{
-    display: fixed;
-    padding-top:10px;
-    margin-left: 10px;
-    z-index:10;
+  .hamburger {
+    width : 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
   }
 }
 

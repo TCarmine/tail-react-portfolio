@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Hamburger = ({isOpen}) => {
-  console.log(isOpen)
   return (
     <>
       <div className="hamburger">
