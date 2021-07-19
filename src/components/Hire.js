@@ -26,7 +26,7 @@ const Hire = () => {
                 type="text" 
                 name="username" 
                 id="username" 
-                placeholder="Enter your contact details" 
+                placeholder="Enter your Name" 
                 required
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold">
@@ -35,7 +35,7 @@ const Hire = () => {
                 type="email" 
                 name="email" 
                 id="email" 
-                placeholder="Enter your email to be contacted back" 
+                placeholder="Enter your email address" 
                 require
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold">
@@ -45,7 +45,7 @@ const Hire = () => {
                 id="textarea" 
                 cols="30"
                 rows="10"
-                placeholder="Enter your email to be contacted back" 
+                placeholder="Leave me a message with a short introduction" 
                 required
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold">

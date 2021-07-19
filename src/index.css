@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -32,6 +32,12 @@
   transform-origin: 1px;
   transition: all 0.3s linear;
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 768px) {
   .nav-links:not(.open) {

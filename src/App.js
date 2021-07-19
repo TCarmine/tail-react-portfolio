@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Showcase from './components/Showcase'
 import Projects from './components/Projects'
 import Hire from './components/Hire'
+import VisualCV from './components/StoryTimeline'
 
 export default function App() {
     return (
@@ -17,7 +18,10 @@ export default function App() {
         </Route>    
         <Route path="/Hire">
           <Hire />
-        </Route>          
+        </Route> 
+        <Route path="/VisualCV">
+          <VisualCV />
+        </Route>           
       </Router>
     )
 }
