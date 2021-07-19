@@ -22,6 +22,10 @@ const Header = () => {
 
           <nav className={`nav-links ${hamburgerOpen ? 'open' : ''}`}>
             <ul className="flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg p-6 md:p-0">
+            <li className="bg-blue-400 rounded-full 
+               hover:bg-blue-500 mr-5 p-1 px-4">
+                <Link to="/VisualCV">Timeline</Link>
+              </li>
               <li className="bg-blue-400 rounded-full 
                hover:bg-blue-500 mr-5 p-1 px-4">
                 <Link to="/">Home</Link>

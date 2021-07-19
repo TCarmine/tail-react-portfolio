@@ -37,7 +37,7 @@ export const projects = [
 export const history = [
   {
     id:1,
-    year: "May 2020 to Present",
+    year: "2020",
     Company:"Pilatus for TXT Group",
     title: "Frontend Engineer",
     desc: "-Implementation for the modern Computer Based Training System, Interface ES6(Ecmascript 6 ), ReactJS from scratch when new solution"
@@ -45,7 +45,7 @@ export const history = [
   },
   {
     id:2,
-    year: "September 2019 to April 2020",
+    year: "2019",
     Company:"AKKA Technologies",
     title:"Software Engineer ( Javascript / NodeJS )",
     desc:
@@ -55,14 +55,14 @@ export const history = [
   },
   {
     id:3,
-    year: "June 2018 to present",
+    year: "2018",
     Company:"Parlito.com",
     title:"Web Development / Business Development",
     desc: "Platform Ecosystem / website / Marketing / mobile app( ReactNative )",
   },
   {
     id:4,
-    year: "2019 March to September 2019",
+    year: "2019",
     Company:"Laboratoriolavallonea ( Milan / remote )",
     title:"Full stack Developer Focus Frontend",
     desc:"Focus to set the internal IT Department to integrate all IT done before from external company, build Team and sone System Admin."
