@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "../index.css"
 import HorizontalTimeline from "react-horizontal-timeline"
-import { Timeline, TimelineEvent } from "react-event-timeline"
+//import { Timeline, TimelineEvent } from "react-event-timeline"
 import { history } from "./data.js"
 
 export default function StoryTimeline() {
@@ -34,7 +34,7 @@ export default function StoryTimeline() {
               }}
             />
           </div>
-          <div>{history[current].title}</div>
+          <div style={{fontWeight: "bold", fontSize:25}}>{history[current].title}</div>
           <p>{history[current].Company}</p>
           <p>{history[current].desc}</p>
         </div>

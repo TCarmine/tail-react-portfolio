@@ -40,8 +40,7 @@ export const history = [
     year: "2020",
     Company:"Pilatus for TXT Group",
     title: "Frontend Engineer",
-    desc: "-Implementation for the modern Computer Based Training System, Interface ES6(Ecmascript 6 ), ReactJS from scratch when new solution"
-    +"needed or porting ActionScript 3 Flash code. Platform Ecosystem / website / Marketing / mobile app( ReactNative )-Integrating SVG into React components and processing SVG media via Inkscape && other tools.",
+    desc: "Implementation for the modern Computer Based Training System, Interface ES6(Ecmascript 6 ), ReactJS from scratch when new solution needed or porting ActionScript 3 Flash code. Platform Ecosystem / website / Marketing / mobile app( ReactNative )-Integrating SVG into React components and processing SVG media via Inkscape && other tools."
   },
   {
     id:2,
@@ -49,9 +48,7 @@ export const history = [
     Company:"AKKA Technologies",
     title:"Software Engineer ( Javascript / NodeJS )",
     desc:
-      "Introduction into the work of an International Consultant."+"Training and further education in project management as well as agile"
-      +"methodologies. Internal and customers projects in Javascript ecosystem and MEAN Stack, plus some with Java"
-      +"Frameworks: NodeJS, ReactJS, Express, Keystone."
+      "Introduction into the work of an International Consultant. Training and further education in project management as well as agile methodologies. Internal and customers projects in Javascript ecosystem and MEAN Stack, plus some with Java. Frameworks: NodeJS, ReactJS, Express, Keystone."
   },
   {
     id:3,
@@ -65,9 +62,7 @@ export const history = [
     year: "2019",
     Company:"Laboratoriolavallonea ( Milan / remote )",
     title:"Full stack Developer Focus Frontend",
-    desc:"Focus to set the internal IT Department to integrate all IT done before from external company, build Team and sone System Admin."
-    +"(Django / Javascript, Jquery, Reactjs) legacy code that need to be mantained and refactored/reconverted. Plan to implement new Frontend"
-    +"with React and for a mobile (React-Native) version.",
+    desc:"Focus to set the internal IT Department to integrate all IT done before from external company, build Team and sone System Admin. (Django / Javascript, Jquery, Reactjs) legacy code that need to be mantained and refactored/reconverted. Plan to implement new Frontend with React and for a mobile (React-Native) version.",
   }
 ];
 
