@@ -37,32 +37,117 @@ export const projects = [
 export const history = [
   {
     id:1,
-    year: "2020",
-    Company:"Pilatus for TXT Group",
-    title: "Frontend Engineer",
-    desc: "Implementation for the modern Computer Based Training System, Interface ES6(Ecmascript 6 ), ReactJS from scratch when new solution needed or porting ActionScript 3 Flash code. Platform Ecosystem / website / Marketing / mobile app( ReactNative )-Integrating SVG into React components and processing SVG media via Inkscape && other tools."
+    year: "2003-01-09",
+    Company:"Various Positions - Pesaro",
+    title: "Video Terminal Operator and Part-time Waiter and bartender",
+    desc: "Part-time in a betting agency during summers and week-ends. Red Cros Volunteer. I did support economicaly myself during University Times."
   },
   {
     id:2,
-    year: "2019",
-    Company:"AKKA Technologies",
-    title:"Software Engineer ( Javascript / NodeJS )",
-    desc:
-      "Introduction into the work of an International Consultant. Training and further education in project management as well as agile methodologies. Internal and customers projects in Javascript ecosystem and MEAN Stack, plus some with Java. Frameworks: NodeJS, ReactJS, Express, Keystone."
+    year: "2010-04-10",
+    Company:"Xanitalia s.r.l - Pesaro",
+    title: "IT Administrator & Methods-Time Measurement",
+    desc: "Daily gathering of statistical data - with Excel and Access and MySQL - and productivity analysis of numerous manufacturing lines. calibration and use of measuring instruments. Supervising and filling in non conformities - ISO 9001: 2008 -. Assistance for inner audits related to the Company Quality System. Technical assistance for HW and SW internal requests. During this Experience I become proficiency in Excel ( Pivot table, Marcos VL functions ). Learned also Access and MySQL DB"
   },
   {
     id:3,
-    year: "2018",
+    year: "2011-01-08",
+    Company:"Arena School - Dublin",
+    title: "English Upper Intermediate + Cambridge FCE certificate",
+    desc: "Daily gathering of statistical data - with Excel and Access and MySQL - and productivity analysis of numerous manufacturing lines. calibration and use of measuring instruments. Supervising and filling in non conformities - ISO 9001: 2008 -. Assistance for inner audits related to the Company Quality System. Technical assistance for HW and SW internal requests. During this Experience I become proficiency in Excel ( Pivot table, Marcos VL functions ). Learned also Access and MySQL DB"
+  },
+  {
+    id:4,
+    year: "2012-01-02",
+    Company:"Skybackpackers - Dublin",
+    title: "Receptionist / Night audits Admin",
+    desc: "Outcome: negotiation at English level ) I brought my English to fluency level."
+  },
+  {
+    id:5,
+    year: "2012-02-06",
+    Company:"Enbio Startup ( Incubated into the Dublin Council University)",
+    title: "Product Development - Reseach & Developing - Internship",
+    desc: "Implementation for the modern Computer Based Training System, Interface ES6(Ecmascript 6 ), ReactJS from scratch when new solution needed or porting ActionScript 3 Flash code. Platform Ecosystem / website / Marketing / mobile app( ReactNative )-Integrating SVG into React components and processing SVG media via Inkscape && other tools."
+  },
+  {
+    id:6,
+    year: "2013-05-01",
+    Company:"Self - SEO projects- Javascript - Berlin",
+    title: "Learne new skills such SEO, SEM and started to learn German",
+    desc: "I wantend change from material engineering and learn new skills."
+  },
+  {
+    id:7,
+    year: "2014-04-07",
+    Company:"Inmotion Development ( main website Holipower.de ) ( Berlin )",
+    title: "Marketing Data Analyst- SEM Manager",
+    desc: "Adwords account setting. Facebook Pages ads account setting and management. Company failed for Management wrong decisions"
+  },
+  {
+    id:8,
+    year: "2015-01-01",
+    Company:"Rocket Internet SE venture ( Berlin )",
+    title: "SEO – Link Building",
+    desc: "SEO Analyst( Majestic/Ahrefs) pages structure and content strategies"
+  },
+  {
+    id:9,
+    year: "2015-04-08",
+    Company:"Auto1 Group ( Berlin )",
+    title: "Business Intelligence (Analyst and ETL)",
+    desc: "Data extraction with MySQL scripts integration into dashboards. Excel, PowerPivot and Tableau. Talend Open Studio and Big data, Tableau, using Jenkins and git. Django setting and configuration for some internal dashboards. Dashboard providing to each marketing channels."
+  },
+  {
+    id:10,
+    year: "2016-04-10",
+    Company:"Rhesus Logistics Group ( Dortmund )",
+    title: "Business Intelligence ( ETL Developer)",
+    desc: "ETL jobs migrated from IBM data Manager to Informatica - PowerCenter -. Jobs scheduling with MS scheduling tool. Visualitation tools: Cognos and Qliksense, PowerBI. Introduced Git and distribuetd Versioning in the BI Team."
+  },
+  {
+    id:11,
+    year: "2018-02-02",
+    Company:"Kreditech SSL ( Hamburg )",
+    title: "BI Data Engineer",
+    desc: "ETL jobs migrated from IBM data Manager to Informatica - PowerCenter - Jobs scheduling with MS scheduling tool. Visualitation tools: Cognos and Qliksense, PowerBI. Introduced Git and distribuetd Versioning in the BI Team."
+  },
+  {
+    id:12,
+    year: "2018-03-06",
+    Company:"DCI Digital Career Institute( Hamburg )",
+    title:"Software Developer's Teacher Assistant",
+    desc:"Assistant of the Teacher’s course and clients requests and managers. Worked with following technologies internally and for clients: JS-ES6.Bootstrap 3 and 4 JQuery/ ReactjsWebpack. Bootstrap 3 and 4 JQuery/ ReactjsWebpack.",
+  },
+  {
+    id:13,
+    year: "2018-01-06",
     Company:"Parlito.com",
     title:"Web Development / Business Development",
     desc: "Platform Ecosystem / website / Marketing / mobile app( ReactNative )",
   },
   {
-    id:4,
-    year: "2019",
+    id:14,
+    year: "2019-03-02",
     Company:"Laboratoriolavallonea ( Milan / remote )",
-    title:"Full stack Developer Focus Frontend",
+    title:"Full Stack Web Software Developer",
     desc:"Focus to set the internal IT Department to integrate all IT done before from external company, build Team and sone System Admin. (Django / Javascript, Jquery, Reactjs) legacy code that need to be mantained and refactored/reconverted. Plan to implement new Frontend with React and for a mobile (React-Native) version.",
+  },
+  {
+    id:15,
+    year: "2019-01-09",
+    Company:"AKKA Technologies( Ulm )",
+    title:"Software Engineer ( Javascript / NodeJS )",
+    desc:
+      "Introduction into the work of an International Consultant. Training and further education in project management as well as agile methodologies. Internal and customers projects in Javascript ecosystem and MEAN Stack, plus some with Java. Frameworks: NodeJS, ReactJS, Express, Keystone."
+  },
+  {
+    id:16,
+    year: "2020-04-05",
+    Company:"Pilatus Aircraft for TXT Group - Lucern",
+    title:"Frontend Engineer",
+    desc:
+      "Implementation for the modern Computer Based Training System Interfaces with ES6, ReactJS porting from ActionScript 3 Flash. Integrating SVG into React components and processing SVG media via Inkscape && other tools",
   }
 ];
 
