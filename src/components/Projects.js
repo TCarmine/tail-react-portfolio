@@ -11,14 +11,14 @@ const Projects = () => {
     <>
       <section className="cover py-36 px-5 bg-blue-400 bg-opacity-30 cover grid grid-cols-1 gap-5
       sm:grid-cols-2 lg:grid-cols-2 lg:min-h-screen lg:pt-36">
-        {items.map((item) => {
+        {items.map((item,i) => {
           const { id, title, subtitle, description, imgSrc } = item
           return (
             <div key={id} className="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center ">
                 <p className="block text-center text-5xl">{title}</p> 
                 <p className="text-center text-white break-all font-semibold text-lg opacity-100">
-                <TextTimed speed={100} msg={description} />
+                <TextTimed speed={100*i} msg={description} />
                 </p>
               </div>  
               <div >
