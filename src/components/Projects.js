@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import { projects } from "./data.js"
+import TextTimed from "./TextTimed.js"
 
 
 const Projects = () => {
@@ -16,9 +17,8 @@ const Projects = () => {
             <div key={id} className="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center ">
                 <p className="block text-center text-5xl">{title}</p> 
-                <p className="text-center text-white break-all font-semibold text-lg opacity-25 
-                  hover:opacity-100">
-                  {description}
+                <p className="text-center text-white break-all font-semibold text-lg opacity-100">
+                <TextTimed speed={100} msg={description} />
                 </p>
               </div>  
               <div >
