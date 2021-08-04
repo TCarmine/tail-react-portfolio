@@ -12,8 +12,8 @@ export const projects = [
     title: "Financial Dashboard",
     subtitle: "React Financial Dashboard to track my Dividends",
     description:
-      "Keep track of my investment portfolio considering Stocks' sector."
-       +"Will track dividends' pay",
+      "Investments portfolio based on stocks' sector."
+       +" Tracking dividends' pay",
     imgSrc: require("../assets/Grimelsee1.jpg").default  
   },
   {
