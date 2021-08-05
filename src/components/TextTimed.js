@@ -8,7 +8,7 @@ const TextTimed = ({ speed, msg }) => {
       return () => window.clearInterval(timer);
     });
 
-    return <div>{children.substr(0, idx)}</div>;
+    return <p>{children.substr(0, idx)}</p>;
   };
   return (
     <div>
