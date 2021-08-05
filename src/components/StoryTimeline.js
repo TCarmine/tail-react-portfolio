@@ -6,7 +6,7 @@ import { history } from "./data.js"
 
 export default function StoryTimeline() {
   
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(history.length-1);
   const [previous, setPrevious] = useState(-1);
   //const [positions, setPosition] = useState(history)
 
