@@ -17,7 +17,7 @@ const Projects = () => {
             <div key={id} className="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center">
                 <p className="block text-center text-5xl">{title}</p> 
-                <p className="text-center text-white break-words font-semibold text-lg opacity-100" style={{margin: "50px"}}>
+                <p className="text-center text-white break-words font-semibold text-lg opacity-100" style={{margin: "22px"}}>
                 <TextTimed speed={150+i*100} msg={description} />
                 </p>
               </div>  
