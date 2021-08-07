@@ -17,12 +17,12 @@ const Projects = () => {
             <div key={id} className="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center">
                 <p className="block text-center text-5xl">{title}</p> 
-                <p className="text-center text-white break-words font-semibold text-lg opacity-100" style={{margin: "22px"}}>
+                <p className="text-center break-words font-semibold text-lg" style={{margin: "22px", color:"rgba(4, 27, 130)"}}>
                 <TextTimed speed={150+i*50} msg={description} />
                 </p>
               </div>  
               <div >
-                <img src={`${imgSrc}`} alt={subtitle} className="p-5 bg-green-500 rounded opacity-30"/>
+                <img src={`${imgSrc}`} alt={subtitle} className="p-5 bg-green-500 rounded opacity-50"/>
               </div>
             </div>  
           )

@@ -27,9 +27,9 @@ export default function StoryTimeline() {
               minEventPadding={20}
               styles={{
                 background: "white",
-                foreground: "#BD3253",
-                outline: "#BFBFBF",
-                margin: "0 auto",
+                foreground: "rgba(43, 87, 196)",//"#BD3253",
+                outline: "rgba(85, 217, 109)",// "#BFBFBF",
+                margin: "100 auto",
                 textAlign: "center"
               }}
             />

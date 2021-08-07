@@ -15,11 +15,9 @@ const Header = () => {
         <header className="flex flex-wrap justify-between md:space-x-4 p-10 w-full text-white relative">
           <div className="logo"> 
             <h2>
-              <Link to="/" className="text-black text-3xl lg:text-5xl">Carmine Tambascia</Link>
+              <Link to="/" className="text-3xl lg:text-5xl" style={{color:"rgba(27, 22, 30)"}}>Carmine Tambascia</Link>
             </h2>
-           {/* <img class="h-8" src="" alt="Themes.dev Logo" title=""></img> for image logo*/}   
           </div>
-
           <nav className={`nav-links ${hamburgerOpen ? 'open' : ''}`}>
             <ul className="flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg p-6 md:p-0">
             <li className="bg-blue-400 rounded-full 

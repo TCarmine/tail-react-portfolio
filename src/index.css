@@ -11,13 +11,13 @@
 
 .showcase{
   height: 100vh;
-  background:url('./assets/Grimpsel_re.jpg') no-repeat center/cover;
+  background:url('./assets/Grimpsel_re.jpg') no-repeat center/cover
 }
 
 .showcase .overlay {
   padding-top: 2.5rem;
   height:15vh;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(27, 22, 30,0.7)
 }
 
 .hamburger{
@@ -28,7 +28,7 @@
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
-  background-color: black;
+  background-color: rgba(27, 22, 30);
   transform-origin: 1px;
   transition: all 0.3s linear;
 }
