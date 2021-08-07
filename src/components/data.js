@@ -5,7 +5,7 @@ export const projects = [
     subtitle: "Remake of website for Parlito App",
     description:
       "Remake of the old Parlito's website",
-    imgSrc: require("../assets/Lu.jpg").default,
+    imgSrc: require("../assets/Lu_re.jpg").default,
   },
   {
     id:2,
@@ -14,7 +14,7 @@ export const projects = [
     description:
       "Investments portfolio based on stocks' sector."
        +" Tracking dividends' pay",
-    imgSrc: require("../assets/Grimelsee1.jpg").default  
+    imgSrc: require("../assets/Grimelsee1_re.jpg").default  
   },
   {
     id:3,
@@ -22,7 +22,7 @@ export const projects = [
     subtitle: "Website with flexbox CSS one of first made",
     description:
       "One of my first website where I applied my knowledge in CSS3 and flexbox",
-    imgSrc: require("../assets/Grimelsee2.jpg").default,
+    imgSrc: require("../assets/Grimelsee2_re.jpg").default,
   },
   {
     id:4,
@@ -30,7 +30,7 @@ export const projects = [
     subtitle: "Make your LinkedIn profile understandable as Timeline",
     description:
       "Tranform Your Linkedin profile in a nice timeline story!",
-    imgSrc: require("../assets/Grimelsee3.jpg").default,
+    imgSrc: require("../assets/Grimelsee4_re.jpg").default,
   },
 ];
 
