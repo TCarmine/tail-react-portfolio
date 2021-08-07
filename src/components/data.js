@@ -68,13 +68,13 @@ export const history = [
     year: "2012-02-06",
     Company:"Enbio Startup ( Incubated into the Dublin Council University)",
     title: "Product Development - Reseach & Developing - Internship",
-    desc: "Implementation for the modern Computer Based Training System, Interface ES6(Ecmascript 6 ), ReactJS from scratch when new solution needed or porting ActionScript 3 Flash code. Platform Ecosystem / website / Marketing / mobile app( ReactNative )-Integrating SVG into React components and processing SVG media via Inkscape && other tools."
+    desc: "Worked in improving CoBalt new patent(Descaling and insert new metal or material,as biocompatible, to obtain a super strong bond and idrophobic with Teflon) for medical compatible application as stents etc"
   },
   {
     id:6,
     year: "2013-05-01",
     Company:"Self - SEO projects- Javascript - Berlin",
-    title: "Learne new skills such SEO, SEM and started to learn German",
+    title: "Learned new skills such SEO, SEM and started to learn German",
     desc: "I wantend change from material engineering and learn new skills."
   },
   {
