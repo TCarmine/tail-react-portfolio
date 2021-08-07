@@ -8,14 +8,16 @@ const Showcase = () => {
         <div className="flex h-screen flex-col items-center 
          justify-center text-white">
             <div className="overlay">
-             <h1 className="text-5xl resize font-bold text-center mb-10
-                 lg:text-center lg:text-7xl7 lg:px-32">I create  
-               <span className="text-blue-500 "> User Interfaces </span > 
-                leveraging React and Javascript
-             </h1>
+              <div class="m-auto">
+                <h1 className="text-5xl resize font-bold text-center mb-10
+                 lg:text-center lg:text-7xl7 lg:px-32 mt-5">I create  
+                  <span className="text-blue-500 "> User Interfaces </span > 
+                    leveraging React and Javascript
+                </h1>
+              </div> 
             </div> 
           
-          <div className="ml-auto lg:ml-0 m-4 items-center justify-center">
+          <div className="ml-auto lg:ml-0 m-6 items-center justify-center">
             <Link to="/hire"
             className="mr-5 bg-blue-400 py-4 px-4 rounded-full font-semibold transition-all
             hover:bg-blue-500 items-center justify-center" >Contact Me!</Link>
