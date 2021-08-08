@@ -23,13 +23,13 @@ export default function StoryTimeline() {
               }}
               //key={id}
               values={history.map((el) => el.year)}
-              maxEventPadding={20}
+              maxEventPadding={150}
               minEventPadding={20}
               styles={{
                 background: "white",
                 foreground: "rgba(43, 87, 196)",//"#BD3253",
                 outline: "rgba(85, 217, 109)",// "#BFBFBF",
-                margin: "100 auto",
+                margin: "0 10px 0 10px",
                 textAlign: "center"
               }}
             />
