@@ -16,8 +16,8 @@ const Projects = () => {
           return (
             <div key={id} className="relative ">
               <div className="absolute inset-0 z-10 text-center flex flex-col items-center justify-center">
-                <p className="block text-center text-5xl">{title}</p> 
-                <p className="text-center break-words font-semibold text-lg" style={{margin: "22px", color:"rgba(4, 27, 130)"}}>
+                <p className="block text-center break-words xs:text-xs sm:text-sm md:text-md lg:text-5xl">{title}</p> 
+                <p className="text-center break-words font-semibold xs:text-xs sm:text-sm  lg:text-lg" style={{margin: "22px", color:"rgba(4, 27, 130)"}}>
                 <TextTimed speed={150+i*50} msg={description} />
                 </p>
               </div>  

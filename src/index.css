@@ -33,6 +33,10 @@
   transition: all 0.3s linear;
 }
 
+.a{
+  box-sizing: content-box;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -59,7 +63,7 @@
 
 @media screen and (min-width: 600px) {
   .resize {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 

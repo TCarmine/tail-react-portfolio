@@ -9,8 +9,8 @@ const Hire = () => {
             <div className="bg-blue-400 py-10 px-20 rounded
             lg:px-10 pt-32 ">
               <h2 className="text-white text-center text-5xl 
-              font-semibold mb-5 lg:text-8xl">
-                Hire me!
+              font-semibold mb-5 lg:text-7xl">
+                Contact me
               </h2>
               <p className="text-white text-center text-md 
               font-semibold mb-5 px-11 rounded border border-solid border-blue-500 
