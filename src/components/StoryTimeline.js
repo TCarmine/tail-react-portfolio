@@ -23,20 +23,20 @@ export default function StoryTimeline() {
               }}
               //key={id}
               values={history.map((el) => el.year)}
-              maxEventPadding={150}
+              maxEventPadding={250}
               minEventPadding={20}
               styles={{
                 background: "white",
-                foreground: "rgba(43, 87, 196)",//"#BD3253",
-                outline: "rgba(85, 217, 109)",// "#BFBFBF",
-                margin: "0 10px 0 10px",
+                foreground: "rgba(43, 87, 196)",
+                outline: "rgba(85, 217, 109)",
+                margin: "100 auto",
                 textAlign: "center"
               }}
             />
           </div>
           <div style={{fontWeight: "bold", fontSize:25}}>{history[current].title}</div>
           <p>{history[current].Company}</p>
-          <p>{history[current].desc}</p>
+          <p style={{margin: "25px 50px", color:"rgba(43, 87, 196)"}}>{history[current].desc} </p>
         </div>
        </> 
   )  
