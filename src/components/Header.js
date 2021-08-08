@@ -13,7 +13,7 @@ const Header = () => {
     return (
       <>
         <header className="flex flex-wrap justify-between md:space-x-4 p-10 w-full text-white relative">
-        <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap' rel='stylesheet' type='text/css' />
           <div className="logo"> 
             <h2>
               <Link to="/" className="text-3xl lg:text-5xl" style={{color:"rgba(27, 22, 30)"}}>Carmine Tambascia</Link>
