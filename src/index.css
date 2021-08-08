@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .logo h2{
-  font-size:larger;
-  font-family:'Yellowtail', cursive;
+  font-family:'EB Garamond', serif;
 }
 
 .showcase{
@@ -44,6 +43,18 @@
 @media only screen and (max-width: 768px) {
   .nav-links:not(.open) {
     display: none;
+  }
+}
+
+@media (max-width: 767px){
+
+  .hamburger {
+    width : 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
   }
 }
 
