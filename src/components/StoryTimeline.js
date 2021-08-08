@@ -18,12 +18,12 @@ export default function StoryTimeline() {
               getLabel={(history) => history}
               index={current}
               indexClick={(index) => {
-                setCurrent(index);
-                setPrevious(previous);
+                setCurrent(index)
+                setPrevious(previous)
               }}
-              //key={id}
+              //maybe need a key={id}, need check
               values={history.map((el) => el.year)}
-              maxEventPadding={250}
+              maxEventPadding={150}
               minEventPadding={20}
               styles={{
                 background: "white",

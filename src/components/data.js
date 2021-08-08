@@ -101,7 +101,7 @@ export const history = [
   {
     id:10,
     year: "2016-10",
-    Company:"Rhesus Logistics Group - Dortmund",
+    Company:"Rhenus Logistics Group - Dortmund",
     title: "Business Intelligen - ETL Developer",
     desc: "ETL jobs migrated from IBM data Manager to Informatica ETL PowerCenter. Jobs scheduling with MS scheduling tool. Visualitation tools: Cognos and Qliksense, PowerBI. Introduced Git and  Versioning in the BI Team."
   },
