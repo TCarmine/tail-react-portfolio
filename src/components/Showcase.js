@@ -6,7 +6,7 @@ const Showcase = () => {
       <>
        <section className="showcase">
         <div className="flex h-screen flex-col items-center 
-         justify-center text-white">
+          justify-center text-white">
             <div className="overlay">
               <div class="m-auto">
                 <h1 className="text-5xl resize font-bold text-center mb-10
