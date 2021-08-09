@@ -1,9 +1,22 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 const Hire = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const { register, handleSubmit, formState: { errors } } =  useForm();
+  const onSubmit = data => handleSubmit(data);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   console.log(errors);
     return (
       <section className="showcase">
@@ -51,7 +64,7 @@ const Hire = () => {
                 placeholder="Mobile number" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold"
-                {...register("Mobile number", {required: false, minLength: 6, maxLength: 12})} 
+                {...register("Mobile number", {required: false, minLength: 6, maxLength: 13})} 
                 />
               <select className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold"
