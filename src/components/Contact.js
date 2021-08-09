@@ -23,7 +23,7 @@ const Contact = () => {
       alert(`Thank you for your message from ${data.email}`);
       const templateId = TEMPLATE_ID; 
       const serviceID = SERVICE_ID;
-      sendFeedback(serviceID, templateId, { from_name: data.name, message_html: data.comment, reply_to: data.email })
+      sendFeedback(serviceID, templateId, { from_name: data.name, message: data.comment, to_name: data.email })
         r.target.reset();
        
     }
