@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import Header from './components/Header'
 import Showcase from './components/Showcase'
 import Projects from './components/Projects'
-import Hire from './components/Hire'
+import Contact from './components/Contact'
 import VisualCV from './components/StoryTimeline'
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
           <Projects />
         </Route>    
         <Route path="/Hire">
-          <Hire />
+          <Contact />
         </Route> 
         <Route path="/VisualCV">
           <VisualCV />

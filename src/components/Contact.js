@@ -2,22 +2,32 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
-const Hire = () => {
-  const { register, handleSubmit, formState: { errors } } =  useForm();
-  const onSubmit = data => handleSubmit(data);
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
+const USER_ID = process.env.REACT_APP_USER_ID
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+const Contact = () => {
+  const { register, handleSubmit, errors } =  useForm();
+  
+    const sendFeedback = (serviceID, templateId, variables) => {
+      emailjs.send(
+          serviceID, templateId,
+          variables
+      ).then(res => {
+          console.log('Email successfully sent!')
+      })
+          .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
+    }
+    
+    const onSubmit = (data,r) => {
+      alert(`Thank you for your message from ${data.email}`);
+      const templateId = TEMPLATE_ID; 
+      const serviceID = SERVICE_ID;
+      sendFeedback(serviceID, templateId, { from_name: data.name, message_html: data.comment, reply_to: data.email })
+        r.target.reset();
+       
+    }
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
-
-  console.log(errors);
     return (
       <section className="showcase">
         <div className="flex h-screen flex-col items-center 
@@ -94,4 +104,4 @@ const Hire = () => {
     )
 }
 
-export default Hire
+export default Contact
