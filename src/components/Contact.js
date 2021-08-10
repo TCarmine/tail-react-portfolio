@@ -2,16 +2,21 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
+
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
 const USER_ID = process.env.REACT_APP_USER_ID
 
+//init(USER_ID);
+
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
   
-    /*const sendFeedback = (serviceID, templateId, variables) => {
+   
+    
+    const sendFeedback = (SERVICE_ID, TEMPLATE_ID, variables) => {
       emailjs.send(
-          serviceID, templateId,
+        SERVICE_ID, TEMPLATE_ID,
           variables
       ).then(res => {
           console.log('Email successfully sent!')
@@ -19,14 +24,14 @@ const Contact = () => {
           .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
     }
     
-    const onSubmit = (data,r) => {
+    const handleRegistration = (data,r) => {
       alert(`Thank you for your message from ${data.email}`);
       const templateId = TEMPLATE_ID; 
       const serviceID = SERVICE_ID;
       sendFeedback(serviceID, templateId, { from_name: data.name, message: data.comment, to_name: data.email })
         r.target.reset();
-    } */
-    const handleRegistration = (data) => console.log(data);
+    } 
+
     const handleError = (errors) => {};
     const registerOptions = {
       name: { required: "Name is required" },
