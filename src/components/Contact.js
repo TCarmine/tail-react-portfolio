@@ -7,9 +7,9 @@ const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
 const USER_ID = process.env.REACT_APP_USER_ID
 
 const Contact = () => {
-  const { register, handleSubmit, errors } =  useForm();
+  const { register, handleSubmit, errors } = useForm();
   
-    const sendFeedback = (serviceID, templateId, variables) => {
+    /*const sendFeedback = (serviceID, templateId, variables) => {
       emailjs.send(
           serviceID, templateId,
           variables
@@ -25,8 +25,20 @@ const Contact = () => {
       const serviceID = SERVICE_ID;
       sendFeedback(serviceID, templateId, { from_name: data.name, message: data.comment, to_name: data.email })
         r.target.reset();
-       
-    }
+    } */
+    const handleRegistration = (data) => console.log(data);
+    const handleError = (errors) => {};
+    const registerOptions = {
+      name: { required: "Name is required" },
+      email: { required: "Email is required" },
+      password: {
+        required: "Password is required",
+        minLength: {
+          value: 8,
+          message: "Password must have at least 8 characters"
+        }
+      }
+    };
 
     return (
       <section className="showcase">
@@ -44,7 +56,7 @@ const Contact = () => {
               placeholder-blue-400">Replies within 24 hours</p>
             </div>
 
-            <form onSubmit={handleSubmit(onSubmit)}
+            <form onSubmit={handleSubmit(handleRegistration, handleError)}
               name="Feeback form" 
               className="flex flex-col
               bg-blue-200 px-10 py-5 rounded"
@@ -54,7 +66,6 @@ const Contact = () => {
                 name="Completename" 
                 id="completename" 
                 placeholder="Enter your Name" 
-                required
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold"
                 {...register("Completename", {required: true, maxLength: 80})}>
@@ -64,13 +75,14 @@ const Contact = () => {
                 name="Email" 
                 id="email" 
                 placeholder="Enter your email address" 
-                require
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold"
                 {...register("Email", {required: true, pattern: /^\S+@\S+$/i})}>
               </input>
               <input 
                 type="tel"
+                name="Mobile number"
+                ref={register}
                 placeholder="Mobile number" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold"
@@ -90,7 +102,7 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 placeholder="Leave me a message with a short introduction" 
-                required
+                {...register("textarea", { required : true })}
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold">
               </textarea>
