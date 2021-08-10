@@ -2,10 +2,9 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
-
-const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
-const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
-const USER_ID = process.env.REACT_APP_USER_ID
+export const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
+export const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
+export const USER_ID = process.env.REACT_APP_USER_ID
 
 //init(USER_ID);
 
@@ -117,6 +116,7 @@ const Contact = () => {
             </form>
           </div>  
         </div>
+  
       </section>  
     )
 }
