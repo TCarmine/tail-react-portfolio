@@ -1,19 +1,19 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
-import emailjs from 'emailjs-com';
+import {init, sendForm} from 'emailjs-com';
 
 export const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
 export const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
 export const USER_ID = process.env.REACT_APP_USER_ID
 
-//init(USER_ID);
+init(USER_ID);
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
   
    
     
-    const sendFeedback = (SERVICE_ID, TEMPLATE_ID, variables) => {
+    /*const sendFeedback = (SERVICE_ID, TEMPLATE_ID, variables) => {
       emailjs.send(
         SERVICE_ID, TEMPLATE_ID,
           variables
@@ -21,14 +21,21 @@ const Contact = () => {
           console.log('Email successfully sent!')
       })
           .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
-    }
+    }  */
     
+    
+
     const handleRegistration = (data,r) => {
       alert(`Thank you for your message from ${data.email}`);
       const templateId = TEMPLATE_ID; 
       const serviceID = SERVICE_ID;
-      sendFeedback(serviceID, templateId, { from_name: data.name, message: data.comment, to_name: data.email })
-        r.target.reset();
+      sendForm(SERVICE_ID, TEMPLATE_ID, "#Feeback form")
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+          console.log('FAILED...', error);
+        });
+      r.target.reset();
     } 
 
     const handleError = (errors) => {};
@@ -67,12 +74,13 @@ const Contact = () => {
               method="post">
               <input 
                 type="text" 
-                name="Completename" 
+                name="from_name" 
                 id="completename" 
                 placeholder="Enter your Name" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold"
-                {...register("Completename", {required: true, maxLength: 80})}>
+                //aria-invalid={errors.user_name ? "true" : "false"}
+                {...register("from_name", {required: true, maxLength: 80})}>
               </input>
               <input 
                 type="email" 
