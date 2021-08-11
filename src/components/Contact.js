@@ -32,7 +32,10 @@ const Contact = () => {
               netlify netlify-honeypot="bot-field" hidden
               className="flex flex-col
               bg-blue-200 px-10 py-5 rounded"
-              method="POST">
+              method="POST"
+              action="/contact/?success=true"
+              data-netlify="true" 
+              >
               <input 
                 type="text" 
                 name="from_name" 
