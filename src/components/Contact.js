@@ -1,55 +1,15 @@
-import React from 'react'
-import { useForm } from 'react-hook-form';
-import {init, sendForm} from 'emailjs-com';
+import React, {useState, useEffect} from 'react'
 
-export const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
-export const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
-export const USER_ID = process.env.REACT_APP_USER_ID
-
-init(USER_ID);
 
 const Contact = () => {
-  const { register, handleSubmit, errors } = useForm();
-  
-   
-    
-    /*const sendFeedback = (SERVICE_ID, TEMPLATE_ID, variables) => {
-      emailjs.send(
-        SERVICE_ID, TEMPLATE_ID,
-          variables
-      ).then(res => {
-          console.log('Email successfully sent!')
-      })
-          .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
-    }  */
-    
-    
+  const [success, setSuccess] = useState(false);
 
-    const handleRegistration = (data,r) => {
-      alert(`Thank you for your message from ${data.email}`);
-      const templateId = TEMPLATE_ID; 
-      const serviceID = SERVICE_ID;
-      sendForm(SERVICE_ID, TEMPLATE_ID, "#Feeback form")
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-          console.log('FAILED...', error);
-        });
-      r.target.reset();
-    } 
+  useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setSuccess(true);
+    }
+  }, []);
 
-    const handleError = (errors) => {};
-    const registerOptions = {
-      name: { required: "Name is required" },
-      email: { required: "Email is required" },
-      password: {
-        required: "Password is required",
-        minLength: {
-          value: 8,
-          message: "Password must have at least 8 characters"
-        }
-      }
-    };
 
     return (
       <section className="showcase">
@@ -67,20 +27,19 @@ const Contact = () => {
               placeholder-blue-400">Replies within 24 hours</p>
             </div>
 
-            <form onSubmit={handleSubmit(handleRegistration, handleError)}
-              name="Feeback form" 
+            <form 
+              name="contact" 
+              netlify netlify-honeypot="bot-field" hidden
               className="flex flex-col
               bg-blue-200 px-10 py-5 rounded"
-              method="post">
+              method="POST">
               <input 
                 type="text" 
                 name="from_name" 
                 id="completename" 
                 placeholder="Enter your Name" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
-                placeholder-blue-400 font-semibold"
-                //aria-invalid={errors.user_name ? "true" : "false"}
-                {...register("from_name", {required: true, maxLength: 80})}>
+                placeholder-blue-400 font-semibold" >
               </input>
               <input 
                 type="email" 
@@ -88,21 +47,17 @@ const Contact = () => {
                 id="email" 
                 placeholder="Enter your email address" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold"
-                {...register("Email", {required: true, pattern: /^\S+@\S+$/i})}>
+                placeholder-blue-400 font-semibold">
               </input>
               <input 
                 type="tel"
                 name="Mobile number"
-                ref={register}
                 placeholder="Mobile number" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold"
-                {...register("Mobile number", {required: false, minLength: 6, maxLength: 13})} 
-                />
+                placeholder-blue-400 font-semibold" >
+               </input>    
               <select className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold"
-                {...register("Title", { required : true })}>
+                placeholder-blue-400 font-semibold">
               <option value="Mr">Mr</option>
               <option value="Mrs">Mrs</option>
               <option value="Miss">Miss</option>
@@ -114,17 +69,17 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 placeholder="Leave me a message with a short introduction" 
-                {...register("textarea", { required : true })}
-                className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold">
+                  className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+                placeholder-blue-400 font-semibold" >
               </textarea>
-              <input type="submit" value="submit" className="bg-blue-400 text-white font-bold
-              tracking-wider py-2 rounded cursor-pointer 
-              transition-all hover:bg-blue-800"/>
+              <input 
+                type="submit" value="submit" className="bg-blue-400 text-white font-bold
+                tracking-wider py-2 rounded cursor-pointer 
+                transition-all hover:bg-blue-800">
+              </input>
             </form>
           </div>  
         </div>
-  
       </section>  
     )
 }
