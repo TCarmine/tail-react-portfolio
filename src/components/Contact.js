@@ -56,6 +56,7 @@ const Contact = () => {
                 id="email" 
                 placeholder="Enter your email address" 
                 value="contact"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold">
               </input>
