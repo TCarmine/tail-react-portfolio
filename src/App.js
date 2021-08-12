@@ -16,7 +16,7 @@ export default function App() {
         <Route path="/Projects">
           <Projects />
         </Route>    
-        <Route path="/Hire">
+        <Route path="/Contact">
           <Contact />
         </Route> 
         <Route path="/VisualCV">
