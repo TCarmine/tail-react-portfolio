@@ -43,7 +43,7 @@ const Contact = () => {
               >
               <input 
                 type="text" 
-                name="from_name" 
+                name="name" 
                 id="completename" 
                 placeholder="Enter your Name" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
@@ -51,7 +51,7 @@ const Contact = () => {
               </input>
               <input 
                 type="email" 
-                name="Email" 
+                name="email" 
                 id="email" 
                 placeholder="Enter your email address" 
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -60,12 +60,12 @@ const Contact = () => {
               </input>
               <input 
                 type="tel"
-                name="Mobile number"
+                name="mobile_number"
                 placeholder="Mobile number" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold" >
                 </input>    
-              <select 
+              <select name="selection"
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                   placeholder-blue-400 font-semibold"
               >
@@ -80,7 +80,7 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 placeholder="Leave me a message with a short introduction" 
-                  className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+                className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold" >
               </textarea>
               <input 
