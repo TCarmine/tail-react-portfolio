@@ -18,7 +18,7 @@ const Showcase = () => {
             </div> 
           
           <div className="ml-auto lg:ml-0 m-6 items-center justify-center">
-            <Link to="/hire"
+            <Link to="/contact"
             className="mr-5 bg-blue-500 py-4 px-4 rounded-full font-semibold transition-all
             hover:bg-blue-700 items-center justify-center" >Contact Me</Link>
             <Link to="/projects"

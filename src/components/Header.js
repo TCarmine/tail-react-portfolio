@@ -36,7 +36,7 @@ const Header = () => {
               </li>
               <li className="bg-blue-500 rounded-full 
                hover:bg-blue-700 mr-5 p-1 px-4">
-                  <Link to="/hire" >Contact me</Link>
+                  <Link to="/contact" >Contact me</Link>
               </li>
             </ul>
           </nav>
