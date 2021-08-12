@@ -38,7 +38,7 @@ const Contact = () => {
                 className="flex flex-col
                 bg-blue-200 px-10 py-5 rounded"
                 method="POST"
-                action="/"
+                action="/contact_thanks"
                 data-netlify="true" 
               >
               <input 
