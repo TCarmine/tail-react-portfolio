@@ -46,7 +46,6 @@ const Contact = () => {
                 name="from_name" 
                 id="completename" 
                 placeholder="Enter your Name" 
-                value="contact"
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold" >
               </input>
@@ -55,7 +54,6 @@ const Contact = () => {
                 name="Email" 
                 id="email" 
                 placeholder="Enter your email address" 
-                value="contact"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold">
@@ -70,7 +68,7 @@ const Contact = () => {
               <select 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                   placeholder-blue-400 font-semibold"
-                value="contact">
+              >
               <option value="Mr">Mr</option>
               <option value="Mrs">Mrs</option>
               <option value="Miss">Miss</option>
