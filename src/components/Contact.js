@@ -12,6 +12,10 @@ const Contact = () => {
 
 
     return (
+
+      {success && (
+        <p style={{ color: "green" }}>Thanks for your message! </p>
+      )}
       <section className="showcase">
         <div className="flex h-screen flex-col items-center 
          justify-center lg:w-auto">
@@ -35,51 +39,57 @@ const Contact = () => {
               method="POST"
               action="/contact/?success=true"
               data-netlify="true" 
-              >
-              <input 
-                type="text" 
-                name="from_name" 
-                id="completename" 
-                placeholder="Enter your Name" 
-                className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
-                placeholder-blue-400 font-semibold" >
-              </input>
-              <input 
-                type="email" 
-                name="Email" 
-                id="email" 
-                placeholder="Enter your email address" 
+            >
+            <input 
+              type="text" 
+              name="from_name" 
+              id="completename" 
+              placeholder="Enter your Name" 
+              value="contact"
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
+              placeholder-blue-400 font-semibold" >
+            </input>
+            <input 
+              type="email" 
+              name="Email" 
+              id="email" 
+              placeholder="Enter your email address" 
+              value="contact"
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+              placeholder-blue-400 font-semibold">
+            </input>
+            <input 
+              type="tel"
+              name="Mobile number"
+              placeholder="Mobile number" 
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+              placeholder-blue-400 font-semibold" >
+              </input>    
+            <select 
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+                placeholder-blue-400 font-semibold"
+              value="contact">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Dr">Dr</option>
+            </select> 
+            <textarea 
+              name="textarea" 
+              id="textarea" 
+              cols="30"
+              rows="10"
+              placeholder="Leave me a message with a short introduction" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold">
-              </input>
-              <input 
-                type="tel"
-                name="Mobile number"
-                placeholder="Mobile number" 
-                className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold" >
-               </input>    
-              <select className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold">
-              <option value="Mr">Mr</option>
-              <option value="Mrs">Mrs</option>
-              <option value="Miss">Miss</option>
-              <option value="Dr">Dr</option>
-              </select> 
-              <textarea 
-                name="textarea" 
-                id="textarea" 
-                cols="30"
-                rows="10"
-                placeholder="Leave me a message with a short introduction" 
-                  className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                placeholder-blue-400 font-semibold" >
-              </textarea>
-              <input 
-                type="submit" value="submit" className="bg-blue-400 text-white font-bold
+              placeholder-blue-400 font-semibold" >
+            </textarea>
+            <input 
+              type="submit" 
+              value="submit" 
+              className="bg-blue-400 text-white font-bold
                 tracking-wider py-2 rounded cursor-pointer 
                 transition-all hover:bg-blue-800">
-              </input>
+            </input>
             </form>
           </div>  
         </div>
