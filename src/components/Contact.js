@@ -13,33 +13,29 @@ const Contact = () => {
 
     return (
       <>
-        <div> {success && (
-          <p style={{ color: "green" }}>Thanks for your message! </p>
-        )}
-        </div>
         <section className="showcase">
-          <div className="flex h-screen flex-col items-center 
-          justify-center lg:w-auto">
+          <div className="flex h-screen flex-col items-center justify-center lg:w-auto">
             <div className="flex flex-col w-9/12 lg:w-auto lg:flex-row">
-              <div className="bg-blue-400 py-10 px-20 rounded
-              lg:px-10 pt-32 ">
-                <h2 className="text-white text-center text-5xl 
-                font-semibold mb-5 lg:text-7xl">
-                  Contact me
-                </h2>
-                <p className="text-white text-center text-md 
-                font-semibold mb-5 px-11 rounded border border-solid border-blue-500 
-                placeholder-blue-400">Replies within 24 hours</p>
-              </div>
+            <div className="bg-blue-400 py-10 px-20 rounded
+            lg:px-10 pt-32 ">
+              <h2 className="text-white text-center text-5xl 
+              font-semibold mb-5 lg:text-7xl">
+                Contact me
+              </h2>
+              <p className="text-white text-center text-md 
+              font-semibold mb-5 px-11 rounded border border-solid border-blue-500 
+              placeholder-blue-400">Replies within 24 hours</p>
+            </div>
 
               <form 
-                name="contact" 
-                netlify netlify-honeypot="bot-field" hidden
+                name="form-name"
+                value="index.html" 
+                data-netlify="true" 
                 className="flex flex-col
                 bg-blue-200 px-10 py-5 rounded"
                 method="POST"
                 action="/thank-you"
-                data-netlify="true" 
+                dataNetlify={true}  
               >
               <input 
                 type="text" 
