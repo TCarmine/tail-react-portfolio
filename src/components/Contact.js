@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
 
               <form 
-                name="form-name"
+                name="contact"
                 value="index.html" 
                 data-netlify="true" 
                 className="flex flex-col
@@ -39,8 +39,8 @@ const Contact = () => {
               >
               <input 
                 type="text" 
-                name="name" 
-                id="completename" 
+                name="userName" 
+                id="userName" 
                 placeholder="Enter your Name" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold" >
@@ -48,7 +48,7 @@ const Contact = () => {
               <input 
                 type="email" 
                 name="email" 
-                id="email" 
+                id="email_id" 
                 placeholder="Enter your email address" 
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
@@ -72,7 +72,7 @@ const Contact = () => {
               </select> 
               <textarea 
                 name="textarea" 
-                id="textarea" 
+                id="textarea_id" 
                 cols="30"
                 rows="10"
                 placeholder="Leave me a message with a short introduction" 
