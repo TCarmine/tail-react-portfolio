@@ -1,15 +1,25 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
+import { useInput } from './inputHook';
 
 
 const Contact = () => {
-  const [success, setSuccess] = useState(false);
+  const {value, bind, reset} = useInput("");
+  /* const [email, setEmail] = useState("");
+  const [tel, setTel] = useState(0);
+  const [selection, setselection] = useState("");
+  const [message, setMessage] = useState(0); */
 
-  useEffect(() => {
+
+/*   useEffect(() => {
     if ( window.location.search.includes('success=true') ) {
       setSuccess(true);
     }
-  }, []);
-
+  }, []); */
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    alert(`Submitting Name ${value}`);
+    reset();
+  } 
 
     return (
       <>
@@ -41,10 +51,11 @@ const Contact = () => {
                 name="userName" 
                 id="userName" 
                 placeholder="Enter your Name" 
+                {...bind}
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold" >
               </input>
-              <input 
+              {/* <input 
                 type="email" 
                 name="email" 
                 id="email_id" 
@@ -62,12 +73,11 @@ const Contact = () => {
                 </input>    
               <select name="selection"
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
-                  placeholder-blue-400 font-semibold"
-              >
-              <option value="Mr">Mr</option>
-              <option value="Mrs">Mrs</option>
-              <option value="Miss">Miss</option>
-              <option value="Dr">Dr</option>
+                  placeholder-blue-400 font-semibold">
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Dr">Dr</option>
               </select> 
               <textarea 
                 name="textarea" 
@@ -77,14 +87,16 @@ const Contact = () => {
                 placeholder="Leave me a message with a short introduction" 
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
                 placeholder-blue-400 font-semibold" >
-              </textarea>
+              </textarea>*/}
               <input 
                 type="submit" 
-                value="submit" 
+                value="Submit message" 
                 className="bg-blue-400 text-white font-bold
                   tracking-wider py-2 rounded cursor-pointer 
-                  transition-all hover:bg-blue-800">
-              </input>
+                  transition-all hover:bg-blue-800"
+                  onSubmit={handleSubmit}>
+
+              </input> 
               </form>
             </div>  
           </div>
