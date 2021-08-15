@@ -1,9 +1,8 @@
 import React from 'react'
 import { useInput } from './inputHook';
-import { BrowserRouter as Router } from "react-router-dom"
 
 const Contact = () => {
-  const {value, bind, reset} = useInput({initialValue: "", isSubmitted : false});
+  const {value, bind, reset} = useInput("");
   /* const [email, setEmail] = useState("");
   const [tel, setTel] = useState(0);
   const [selection, setselection] = useState("");
@@ -47,7 +46,7 @@ const Contact = () => {
                 className="flex flex-col
                 bg-blue-200 px-10 py-5 rounded"
                 method="POST"
-                action="../thank-you.html"
+                action="./thank-you.html"
               >
               <input 
                 type="text" 

@@ -5,6 +5,8 @@ import Showcase from './components/Showcase'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import VisualCV from './components/StoryTimeline'
+import ThankYou from './components/ThankYou'
+
 
 export default function App() {
     return (
@@ -21,7 +23,8 @@ export default function App() {
         </Route> 
         <Route path="/VisualCV">
           <VisualCV />
-        </Route>           
+        </Route> 
+        <Route path="/thankyou" component={ThankYou} />          
       </Router>
     )
 }
