@@ -18,12 +18,26 @@
     <title> Frontend Software Engineer Portfolio</title>
   </head>
   <body>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" 
+          netlify 
+          netlify-honeypot="bot-field"
+          method="POST"
+          hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="mobile_number" />
-      <select type="selection" name="selection" />
-      <textarea name="message"></textarea>
+      <select name="selection">
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+        <option value="Dr">Dr</option>
+    </select> 
+      <textarea name="message">
+      </textarea>
+      <input 
+      type="submit" 
+      value="submit">
+    </input>  
     </form>
   <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
