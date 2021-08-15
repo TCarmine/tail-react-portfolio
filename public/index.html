@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#60A5FA" />
+    <meta
+      name="description"
+      content="Carmine Software Engineer Portfolio"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <title> Frontend Software Engineer Portfolio</title>
+  </head>
+  <body>
+    <form name="contact" 
+          netlify 
+          netlify-honeypot="bot-field"
+          method="POST"
+          hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="mobile_number" />
+      <select name="selection">
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+        <option value="Dr">Dr</option>
+    </select> 
+      <textarea name="message">
+      </textarea>
+      <input 
+      type="submit" 
+      value="submit">
+    </input>  
+    </form>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
