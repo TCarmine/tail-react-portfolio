@@ -8,7 +8,7 @@ const Showcase = () => {
         <div className="flex h-screen flex-col items-center 
           justify-center text-white">
             <div className="overlay">
-              <div class="m-auto">
+              <div className="m-auto">
                 <h1 className="text-5xl resize font-bold text-center mb-10
                  lg:text-center lg:text-7xl7 lg:px-32 mt-5">I create  
                   <span className="text-blue-500 "> User Interfaces </span > 
