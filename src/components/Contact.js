@@ -1,27 +1,14 @@
 import React from 'react'
-import { useInput } from './inputHook';
+import useSignUpForm from './inputHook';
 
 const Contact = () => {
-  const {value, bind, reset} = useInput("");
-  /* const [email, setEmail] = useState("");
-  const [tel, setTel] = useState(0);
-  const [selection, setselection] = useState("");
-  const [message, setMessage] = useState(0); */
-
-
-/*   useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
-      setSuccess(true);
-    }
-  }, []); */
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    
-    console.log("Ciaoooooo")
-    alert(`Submitting Name ${value}`);
-   /*  router.push("/thank-you"); */
-    reset();
-  } 
+  
+  const signup = () => {
+    alert(`User Created!
+           Name: ${inputs.firstName} ${inputs.lastName}
+           Email: ${inputs.email}`);
+  }
+  const {inputs, handleInputChange, handleSubmit} = useSignUpForm({firstName: ''}, signup);
 
     return (
       <>
@@ -47,13 +34,15 @@ const Contact = () => {
                 bg-blue-200 px-10 py-5 rounded"
                 method="POST"
                 action="./thank-you.html"
+                onSubmit={handleSubmit}
               >
               <input 
                 type="text" 
                 name="userName" 
+                onChange={handleInputChange} value={inputs.firstName}
+                required
                 id="userName" 
                 placeholder="Enter your Name" 
-                {...bind}
                 className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
                 placeholder-blue-400 font-semibold" >
               </input>
@@ -95,8 +84,7 @@ const Contact = () => {
                 value="Submit message" 
                 className="bg-blue-400 text-white font-bold
                   tracking-wider py-2 rounded cursor-pointer 
-                  transition-all hover:bg-blue-800"
-                  onSubmit={handleSubmit}>
+                  transition-all hover:bg-blue-800">
 
               </input> 
               </form>
