@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/VisualCV">
           <VisualCV />
         </Route> 
-        <Route path="/thankyou" component={ThankYou} />          
+        <Route component={ThankYou} />          
       </Router>
     )
 }

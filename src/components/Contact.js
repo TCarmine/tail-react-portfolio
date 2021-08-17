@@ -1,5 +1,4 @@
 import React, { useState} from 'react'
-import useSignUpForm from './inputHook';
 
 const Contact = () => {
   let showSuccess = false
@@ -18,8 +17,9 @@ const Contact = () => {
       event.preventDefault();
       if(inputs.firstName) {
         setValid(true);
-    }
-      setSubmitted(true);
+        setSubmitted(true);
+      }
+    
     }
   }
 
@@ -57,7 +57,7 @@ const Contact = () => {
               className="flex flex-col
               bg-blue-200 px-10 py-5 rounded"
               method="POST"
-              action="./thank-you.html"
+              action="/thank-you.html"
               onSubmit={handleSubmit, {setSubmitted:true}}>                 
             <input 
               id="first-name"
