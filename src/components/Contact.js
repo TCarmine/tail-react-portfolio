@@ -10,13 +10,16 @@ const Contact = () => {
   });
 
   const [valid, setValid] = useState(false);
+  const [mobile, setMobile] = useState("");
   const [submitted, setSubmitted] = useState(showSuccess);
 
   const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
+      const validatedValue = inputs.tel.replace(/[^0-9]/g, "");
       if(inputs.firstName && inputs.email && inputs.tel ) {
-        setValid(true);
+        setValid(true) 
+        setMobile(validatedValue)
         setSubmitted(true);
       }
     
@@ -81,9 +84,9 @@ const Contact = () => {
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold">
             </input>
-            {submitted && !inputs.email && <span id='first-name-error'>Please enter a valid email address</span>}
+            {submitted && !inputs.email && <span id='email-error'>Please enter a valid email address</span>}
             <input 
-              id="tel_id"
+              id="mobile_id"
               type="tel"
               name="mobile_number"
               onChange={handleInputChange} 
@@ -93,7 +96,7 @@ const Contact = () => {
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold" >
               </input>   
-              {submitted && !inputs.tel && <span id='first-name-error'>Please enter your number</span>}
+              {submitted && !inputs.tel && <span id='tel-error'>Please enter your number</span>}
             <input 
               type="submit" 
               value="Submit message" 
