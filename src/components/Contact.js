@@ -61,19 +61,28 @@ const Contact = () => {
               onSubmit={handleSubmit, {setSubmitted:true}}>   
               <input type="hidden" name="form-name" value="contact" />              
             <input 
-              id="first-name"
+              id="name"
               type="text" 
               disabled={showSuccess}
-              name="firstName"
+              name="name"
               onChange={handleInputChange} 
               setSubmitted= {setSubmitted}
               value={inputs.firstName}
               required
-              placeholder="Enter your Name" 
+              placeholder="Enter your Full Name" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
               placeholder-blue-400 font-semibold" >
             </input>
-            {submitted && !inputs.firstName && <span id='first-name-error'>Please enter a first name</span>}
+            {submitted && !inputs.firstName && <span id='first-name-error'>Please enter your name</span>}
+            <input 
+              type="email" 
+              name="email" 
+              id="email_id" 
+              placeholder="Enter your email address" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+              placeholder-blue-400 font-semibold">
+            </input>
             <input 
               type="submit" 
               value="Submit message" 
