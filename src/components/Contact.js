@@ -4,8 +4,9 @@ const Contact = () => {
   let showSuccess = false
 
   const [inputs, setInputs] = useState({
-    fullName: '',
-	  email: '',
+    fullName: "",
+	  email: "",
+    tel:""
   });
 
   const [valid, setValid] = useState(false);
@@ -87,6 +88,17 @@ const Contact = () => {
               placeholder-blue-400 font-semibold">
             </input>
             {submitted && !inputs.email && <span id='first-name-error'>Please enter a valid email address</span>}
+            <input 
+              id="tel_id"
+              type="tel"
+              name="mobile_number"
+              onChange={handleInputChange} 
+              setSubmitted= {setSubmitted}
+              value={inputs.tel}
+              placeholder="Mobile number" 
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+              placeholder-blue-400 font-semibold" >
+              </input>   
             <input 
               type="submit" 
               value="Submit message" 
