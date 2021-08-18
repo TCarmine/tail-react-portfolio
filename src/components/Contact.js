@@ -60,10 +60,10 @@ const Contact = () => {
               onSubmit={handleSubmit, {setSubmitted:true}}>   
               <input type="hidden" name="form-name" value="contact" />              
             <input 
-              id="name"
+              id="full-name"
               type="text" 
               disabled={showSuccess}
-              name="name"
+              name="fullName"
               onChange={handleInputChange} 
               setSubmitted= {setSubmitted}
               value={inputs.fullName}
