@@ -92,6 +92,7 @@ const Contact = () => {
               onChange={handleInputChange} 
               setSubmitted= {setSubmitted}
               value={inputs.tel}
+              required
               placeholder="Mobile number" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold" >
