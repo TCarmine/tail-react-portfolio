@@ -28,12 +28,6 @@ const Contact = () => {
     setInputs(inputs => ({...inputs, [event.target.name]: event.target.value}));
   }
 
-  const signup = () => {
-    alert(`User Created!
-           Name: ${inputs.firstName} ${inputs.lastName}
-           Email: ${inputs.email}`);
-  }
-
   return (
     <>
       <section className="showcase">
@@ -52,7 +46,7 @@ const Contact = () => {
 
             <form 
               name="contact"
-              value="index.html" 
+              value="index.html"
               data-netlify="true" 
               className="flex flex-col
               bg-blue-200 px-10 py-5 rounded"
@@ -99,6 +93,7 @@ const Contact = () => {
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold" >
               </input>   
+              {submitted && !inputs.tel && <span id='first-name-error'>Please enter your number</span>}
             <input 
               type="submit" 
               value="Submit message" 
