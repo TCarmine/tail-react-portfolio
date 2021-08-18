@@ -4,8 +4,7 @@ const Contact = () => {
   let showSuccess = false
 
   const [inputs, setInputs] = useState({
-    firstName: '',
-	  lastName: '',
+    fullName: '',
 	  email: '',
   });
 
@@ -67,22 +66,27 @@ const Contact = () => {
               name="name"
               onChange={handleInputChange} 
               setSubmitted= {setSubmitted}
-              value={inputs.firstName}
+              value={inputs.fullName}
               required
               placeholder="Enter your Full Name" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-50 
               placeholder-blue-400 font-semibold" >
             </input>
-            {submitted && !inputs.firstName && <span id='first-name-error'>Please enter your name</span>}
+            {submitted && !inputs.fullName && <span id='first-name-error'>Please enter your name</span>}
             <input 
+              id="email_id"
               type="email" 
               name="email" 
-              id="email_id" 
+              onChange={handleInputChange} 
+              setSubmitted= {setSubmitted}
+              value={inputs.email}
+              required
               placeholder="Enter your email address" 
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold">
             </input>
+            {submitted && !inputs.email && <span id='first-name-error'>Please enter a valid email address</span>}
             <input 
               type="submit" 
               value="Submit message" 
