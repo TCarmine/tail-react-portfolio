@@ -15,7 +15,7 @@ const Contact = () => {
   const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
-      if(inputs.firstName) {
+      if(inputs.firstName && inputs.email && inputs.tel ) {
         setValid(true);
         setSubmitted(true);
       }
