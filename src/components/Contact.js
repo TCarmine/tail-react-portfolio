@@ -6,7 +6,7 @@ const Contact = () => {
   const [inputs, setInputs] = useState({
     fullName: "",
 	  email: "",
-    tel:""
+    tel:"",
   });
 
   const [valid, setValid] = useState(false);
@@ -62,8 +62,8 @@ const Contact = () => {
               type="text" 
               disabled={showSuccess}
               name="fullName"
-              onChange={handleInputChange} 
-              setSubmitted= {setSubmitted}
+              onChange = {handleInputChange} 
+              setSubmitted = {setSubmitted}
               value={inputs.fullName}
               required
               placeholder="Enter your Full Name" 
@@ -75,9 +75,9 @@ const Contact = () => {
               id="email_id"
               type="email" 
               name="email" 
-              onChange={handleInputChange} 
-              setSubmitted= {setSubmitted}
-              value={inputs.email}
+              onChange = {handleInputChange} 
+              setSubmitted = {setSubmitted}
+              value = {inputs.email}
               required
               placeholder="Enter your email address" 
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -89,9 +89,9 @@ const Contact = () => {
               id="mobile_id"
               type="tel"
               name="mobile_number"
-              onChange={handleInputChange} 
-              setSubmitted= {setSubmitted}
-              value={inputs.tel}
+              onChange = {handleInputChange} 
+              setSubmitted = {setSubmitted}
+              value = {inputs.tel}
               required
               placeholder="Mobile number" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
