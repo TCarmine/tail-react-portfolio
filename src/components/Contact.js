@@ -6,20 +6,20 @@ const Contact = () => {
   const [inputs, setInputs] = useState({
     fullName: "",
 	  email: "",
-    tel:"",
+    messsage:"",
   });
 
   const [valid, setValid] = useState(false);
-  const [mobile, setMobile] = useState("");
+  //const [mobile, setMobile] = useState("");
   const [submitted, setSubmitted] = useState(showSuccess);
 
   const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
-      const validatedValue = inputs.tel.replace(/[^0-9]/g, "");
-      if(inputs.firstName && inputs.email && inputs.tel ) {
+      //const validatedValue = inputs.tel.replace(/[^0-9]/g, "");
+      if(inputs.firstName && inputs.email && inputs.message) {
         setValid(true) 
-        setMobile(validatedValue)
+        //setMobile(validatedValue)
         setSubmitted(true);
       }
     
@@ -60,7 +60,7 @@ const Contact = () => {
             <input 
               id="full-name"
               type="text" 
-              disabled={showSuccess}
+              //disabled={showSuccess}
               name="fullName"
               onChange = {handleInputChange} 
               setSubmitted = {setSubmitted}
@@ -85,19 +85,18 @@ const Contact = () => {
               placeholder-blue-400 font-semibold">
             </input>
             {submitted && !inputs.email && <span id='email-error'>Please enter a valid email address</span>}
-            <input 
-              id="mobile_id"
-              type="tel"
-              name="mobile_number"
+            <textarea 
+              name="textarea" 
+              id="textarea_id" 
+              cols="30"
+              rows="10"
               onChange = {handleInputChange} 
               setSubmitted = {setSubmitted}
-              value = {inputs.tel}
-              required
-              placeholder="Mobile number" 
+              value = {inputs.messsage}
+              placeholder="Leave me a message with a short introduction" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold" >
-              </input>   
-              {submitted && !inputs.tel && <span id='tel-error'>Please enter your number</span>}
+            </textarea>
             <input 
               type="submit" 
               value="Submit message" 
