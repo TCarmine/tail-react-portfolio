@@ -1,22 +1,26 @@
-import React, { useState} from 'react'
+import React, { useState, useCallback} from 'react'
 
 const Contact = () => {
   let showSuccess = false
 
-  const [inputs, setInputs] = useState({
+/*   const [inputs, setInputs] = useState({
     fullName: "",
 	  email: "",
     messsage:"",
-  });
-
+  }); */
+  const [inputs, setInputs] = useState({});
   const [valid, setValid] = useState(false);
   //const [mobile, setMobile] = useState("");
   const [submitted, setSubmitted] = useState(showSuccess);
   
+  const handleInputChange = (e) => {
+    e.persist();
+
+    const handleChange = e => setInputs(prevState => ({ ...prevState, [e.target.name]: e.target.value }));
+  }
+
   const handleSubmit = (e) => {
-    console.log(e.target.name); // Logs correctly
-    console.log(e.target.value); // Logs correctly
-    
+   
     if (e) {
       e.preventDefault();
       //const validatedValue = inputs.tel.replace(/[^0-9]/g, "");
@@ -24,14 +28,14 @@ const Contact = () => {
         setValid(true) 
         //setMobile(validatedValue)
       }
+      
       setSubmitted(true);
     }
+
+    
   }
 
-  const handleInputChange = (e) => {
-    e.persist();
-    setInputs(inputs => ({...inputs, [e.target.name]: e.target.value}));
-  }
+  
 
   return (
     <>
