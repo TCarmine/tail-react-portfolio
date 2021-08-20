@@ -89,7 +89,7 @@ const Contact = () => {
               placeholder-blue-400 font-semibold">
             </input>
             {submitted && !inputs.email && <span id='email-error'>Please enter a valid email address</span>}
-            <input
+            <textarea
               id="textarea_id"
               name="message" 
               type="text" 
@@ -100,7 +100,7 @@ const Contact = () => {
               placeholder="Leave me a message with a short introduction" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold" >
-            </input>
+            </textarea>
             <input 
               type="submit" 
               value="Submit message" 
