@@ -12,23 +12,25 @@ const Contact = () => {
   const [valid, setValid] = useState(false);
   //const [mobile, setMobile] = useState("");
   const [submitted, setSubmitted] = useState(showSuccess);
-
-  const handleSubmit = (event) => {
-    if (event) {
-      event.preventDefault();
+  
+  const handleSubmit = (e) => {
+    console.log(e.target.name); // Logs correctly
+    console.log(e.target.value); // Logs correctly
+    
+    if (e) {
+      e.preventDefault();
       //const validatedValue = inputs.tel.replace(/[^0-9]/g, "");
       if(inputs.firstName && inputs.email && inputs.message) {
         setValid(true) 
         //setMobile(validatedValue)
-        setSubmitted(true);
       }
-    
+      setSubmitted(true);
     }
   }
 
-  const handleInputChange = (event) => {
-    event.persist();
-    setInputs(inputs => ({...inputs, [event.target.name]: event.target.value}));
+  const handleInputChange = (e) => {
+    e.persist();
+    setInputs(inputs => ({...inputs, [e.target.name]: e.target.value}));
   }
 
   return (
@@ -63,7 +65,6 @@ const Contact = () => {
               //disabled={showSuccess}
               name="fullName"
               onChange = {handleInputChange} 
-              setSubmitted = {setSubmitted}
               value={inputs.fullName}
               required
               placeholder="Enter your Full Name" 
@@ -76,7 +77,6 @@ const Contact = () => {
               type="email" 
               name="email" 
               onChange = {handleInputChange} 
-              setSubmitted = {setSubmitted}
               value = {inputs.email}
               required
               placeholder="Enter your email address" 
@@ -85,18 +85,18 @@ const Contact = () => {
               placeholder-blue-400 font-semibold">
             </input>
             {submitted && !inputs.email && <span id='email-error'>Please enter a valid email address</span>}
-            <textarea 
-              name="textarea" 
-              id="textarea_id" 
+            <input
+              id="textarea_id"
+              name="message" 
+              type="text" 
               cols="30"
               rows="10"
               onChange = {handleInputChange} 
-              setSubmitted = {setSubmitted}
               value = {inputs.messsage}
               placeholder="Leave me a message with a short introduction" 
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold" >
-            </textarea>
+            </input>
             <input 
               type="submit" 
               value="Submit message" 
