@@ -1,16 +1,10 @@
 import React, { useState, useCallback} from 'react'
 
 const Contact = () => {
-  let showSuccess = false
+  let showSuccess
 
-/*   const [inputs, setInputs] = useState({
-    fullName: "",
-	  email: "",
-    messsage:"",
-  }); */
   const [inputs, setInputs] = useState({});
   const [valid, setValid] = useState(false);
-  //const [mobile, setMobile] = useState("");
   const [submitted, setSubmitted] = useState(showSuccess);
   
   const handleInputChange = (e) => {
@@ -20,39 +14,33 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-   
+    setSubmitted(true);
+    console.log(showSuccess)
     if (e) {
       e.preventDefault();
-      //const validatedValue = inputs.tel.replace(/[^0-9]/g, "");
       if(inputs.firstName && inputs.email && inputs.message) {
         setValid(true) 
-        //setMobile(validatedValue)
       }
-      
-      setSubmitted(true);
     }
-
-    
   }
-
-  
-
+ 
   return (
     <>
       <section className="showcase">
         <div className="flex h-screen flex-col items-center justify-center lg:w-auto">
           <div className="flex flex-col w-9/12 lg:w-auto lg:flex-row">
           <div className="bg-blue-400 py-10 px-20 rounded
-          lg:px-10 pt-32 ">
-            <h2 className="text-white text-center text-5xl 
-            font-semibold mb-5 lg:text-7xl">
+          lg:px-10 md: pt-32 ">
+            <h2 class="text-white lg:text-center ms:text-right font-semibold mb-5 ms:text-sm lg:text-7xl">
               Contact me
             </h2>
-            <p className="text-white text-center text-md 
-            font-semibold mb-5 px-11 rounded border border-solid border-blue-500 
-            placeholder-blue-400">Replies within 24 hours</p>
+            <p class="text-white 
+                        text-md 
+                        font-semibold mb-5 
+                        ms:text-right lg:text-3xl rounded border 
+                        border-solid border-blue-500  placeholder-blue-400">
+              Replies within 24 hours</p>
           </div>
-
             <form 
               name="contact"
               value="index.html"
@@ -66,7 +54,6 @@ const Contact = () => {
             <input 
               id="full-name"
               type="text" 
-              //disabled={showSuccess}
               name="fullName"
               onChange = {handleInputChange} 
               value={inputs.fullName}
@@ -89,6 +76,26 @@ const Contact = () => {
               placeholder-blue-400 font-semibold">
             </input>
             {submitted && !inputs.email && <span id='email-error'>Please enter a valid email address</span>}
+            <input 
+              id="tel_id"
+              type="tel" 
+              name="mobile_number" 
+              onChange = {handleInputChange} 
+              value = {inputs.email}
+              required
+              placeholder="Enter your phone number" 
+              pattern = "+\d"  //"+\d{2}|00\d{2}|0\d{2} "  //"[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+              placeholder-blue-400 font-semibold">
+            </input>
+            <select name="selection" 
+                className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
+                placeholder-blue-400 font-semibold">
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+              <option value="Dr">Dr</option>
+            </select>
             <textarea
               id="textarea_id"
               name="message" 
