@@ -102,7 +102,7 @@ export const history = [
     id:10,
     year: "2016-10",
     Company:"Rhenus Logistics Group - Dortmund",
-    title: "Business Intelligen - ETL Developer",
+    title: "Business Intelligence - ETL Developer",
     desc: "ETL jobs migrated from IBM data Manager to Informatica ETL PowerCenter. Jobs scheduling with MS scheduling tool. Visualitation tools: Cognos and Qliksense, PowerBI. Introduced Git and  Versioning in the BI Team."
   },
   {
@@ -110,7 +110,7 @@ export const history = [
     year: "2018-02",
     Company:"Kreditech SSL - Hamburg",
     title: "BI Data Engineer",
-    desc: "ETL jobs migrated from IBM data Manager to Informatica - PowerCenter - Jobs scheduling with MS scheduling tool. Visualitation tools: Cognos and Qliksense, PowerBI. Introduced Git and distributed versioning in the BI Team."
+    desc: "Created and maintein ETL ad hoc jobs with Pentaho Kettle. Worked on new logic with other of the Team. Exasol Queries and modelling maintenance. Python Scripting. Docker Scripting. Used Ubuntu for developing and Windows for Exasol queries."
   },
   {
     id:12,
