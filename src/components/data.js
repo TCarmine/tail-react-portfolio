@@ -72,10 +72,10 @@ export const history = [
   },
   {
     id:6,
-    year: "2013-01",
-    Company:"Self - SEO projects- Javascript - Berlin",
+    year: "2013-05",
+    Company:"Marketing analyst (SEM / SEO) - Javascript Engineer",
     title: "Learned new skills such SEO, SEM and started to learn German",
-    desc: "Studied a lot SEO and done few internet projects such IntervisteLavori.it."
+    desc: "Automation of Adwords, HTML, Google Analytics e Google Webmaster Tool task with Javascript / Googlescript. Pages technical site optimization.Support for colleagues to optimize pages. Search keywords for marketing,Optimization of information and site structure.Production and statistical analysis and reporting on KPIs. Control of all SEO software analysis activities  as SEMrush, Ahrefs. Creation of competitive analysis. Production of regular and detailed audits on customer performance      campaigns"
   },
   {
     id:7,
@@ -83,13 +83,6 @@ export const history = [
     Company:"Inmotion Development, main website Holipower.de - Berlin",
     title: "Marketing Data Analyst- SEM Manager",
     desc: "Adwords account setting. Facebook Pages ads account setting and management."
-  },
-  {
-    id:8,
-    year: "2015-01",
-    Company:"Rocket Internet SE venture - Berlin",
-    title: "SEO – Link Building",
-    desc: "SEO Analyst(Majestic/Ahrefs) pages structure and content strategies."
   },
   {
     id:9,
@@ -120,26 +113,12 @@ export const history = [
     desc:"Assistant of the Teacher’s course and clients requests and managers. Worked with following technologies internally and for clients: JS-ES6.Bootstrap 3 and 4 JQuery/ ReactjsWebpack. Bootstrap 3 and 4 JQuery/ ReactjsWebpack.",
   },
   {
-    id:13,
-    year: "2018-07",
-    Company:"Parlito.com",
-    title:"Web Development - Business Development",
-    desc: "Platform Ecosystem / website / Marketing / Mobile App - ReactNative.",
-  },
-  {
-    id:14,
-    year: "2019-02",
-    Company:"Laboratoriolavallonea ( Milan / remote )",
-    title:"Full Stack Web Software Developer",
-    desc:"Focus to set the internal IT Department to integrate all IT done before from external company, build Team and sone System Admin. (Django / Javascript, Jquery, Reactjs) legacy code that need to be mantained and refactored/reconverted. Plan to implement new Frontend with React and for a mobile with React-Native.",
-  },
-  {
     id:15,
     year: "2019-09",
     Company:"AKKA Technologies - Ulm",
     title:"Javascript Software Engineer - NodeJS ",
     desc:
-      "Introduction into the work of an International Consultant. Training and further education in project management as well as agile methodologies. Internal and customers projects in Javascript ecosystem and MEAN Stack, plus some with Java. Frameworks: NodeJS, ReactJS, Express, Keystone."
+      "Introduced into the work of an International Consultant. Training and further education in project management as well as agile methodologies. Internal and customers projects in Javascript ecosystem and MEAN Stack, plus some with Java. Frameworks: NodeJS, ReactJS, Express, Keystone."
   },
   {
     id:16,
