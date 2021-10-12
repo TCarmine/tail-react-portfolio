@@ -1,4 +1,4 @@
-import React, { useState, useCallback} from 'react'
+import React, { useState } from 'react'
 
 const Contact = () => {
   let showSuccess
@@ -15,7 +15,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     setSubmitted(true);
-    console.log(showSuccess)
     if (e) {
       e.preventDefault();
       if(inputs.firstName && inputs.email && inputs.message) {
@@ -84,7 +83,7 @@ const Contact = () => {
               value = {inputs.email}
               required
               placeholder="Enter your phone number" 
-              pattern = "+\d"  //"+\d{2}|00\d{2}|0\d{2} "  //"[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern = "+\d"  
               className="py-2 px-4 mb-5 rounded border border-solid border-blue-500 
               placeholder-blue-400 font-semibold">
             </input>
@@ -116,7 +115,7 @@ const Contact = () => {
                 transition-all hover:bg-blue-800">
             </input> 
             </form>
-            {showSuccess &&<div class='success-message'>Success! Thank you for registering</div>}
+            {showSuccess &&<div class='success-message'>Thank you for contact me. You will get an answer from me in 24 hours</div>}
           </div>  
         </div>
       </section>  

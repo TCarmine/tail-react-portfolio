@@ -8,7 +8,6 @@ export default function StoryTimeline() {
   
   const [current, setCurrent] = useState(history.length-1);
   const [previous, setPrevious] = useState(-1);
-  //const [positions, setPosition] = useState(history)
 
   return (
        <> 
@@ -21,7 +20,7 @@ export default function StoryTimeline() {
                 setCurrent(index)
                 setPrevious(previous)
               }}
-              //maybe need a key={id}, need check
+              // a key here is not needed as element order doesn't change
               values={history.map((el) => el.year)}
               maxEventPadding={150}
               minEventPadding={20}
